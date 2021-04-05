@@ -10,8 +10,9 @@
 
 * Cybersecurity students 
 * Cybersecurity professionals 
-* Information technology professors 
-* Government officials 
+* Information technology and Cybersecurity professors 
+* Technology consultants 
+ 
 ## How To Use
 
 * Breaks down the framework explaining each control 
