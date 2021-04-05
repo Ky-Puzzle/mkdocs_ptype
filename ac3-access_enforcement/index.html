@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        <link rel="canonical" href="https://verituslabs.github.io/mkdocs_ptype/ac3-access_enforcement/">
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>Ac3 access enforcement - VeritasLabs</title>
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+
+        <script src="../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="..">VeritasLabs</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href=".." class="nav-link">Home</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../families/" class="nav-link">Families</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h3 id="ac-3-access-enforcement">AC-3: Access Enforcement</h3>
+<p>Control: The information system enforces approved authorizations for logical access to information
+and system resources in accordance with applicable access control policies.</p>
+<p>Supplemental Guidance: <a href="../access_control/">Access control policies</a> (e.g., identity-based policies, role-based policies,
+control matrices, cryptography) control access between active entities or subjects (i.e., users or
+processes acting on behalf of users) and passive entities or objects (e.g., devices, files, records,
+domains) in information systems. In addition to enforcing authorized access at the information
+system level and recognizing that information systems can host many applications and services in
+support of organizational missions and business operations, access enforcement mechanisms can
+also be employed at the application and service level to provide increased information security.</p>
+<p>Related controls: <a href="../ac2-account_management/">AC-2</a>, <a href="../access_control/">AC-4, AC-5, AC-6, AC-16, AC-17, AC-18, AC-19, AC-20, AC-21, AC22</a>, <a href="audit_and_accountabilty.md">AU-9</a>, <a href="../configuration_management/">CM-5, CM-6, CM-11</a>, <a href="../maintenance/">MA-3, MA-4, MA-5</a>, <a href="physical_and_environmental_protection">PE-3</a>.
+Control Enhancements:</p>
+<p>(1) ACCESS ENFORCEMENT | RESTRICTED ACCESS TO PRIVILEGED FUNCTIONS
+[Withdrawn: Incorporated into AC-6].</p>
+<p>(2) ACCESS ENFORCEMENT | DUAL AUTHORIZATION</p>
+<p>The information system enforces dual authorization for [Assignment: organization-defined
+privileged commands and/or other organization-defined actions].
+Supplemental Guidance: Dual authorization mechanisms require the approval of two authorized
+individuals in order to execute. Organizations do not require dual authorization mechanisms
+when immediate responses are necessary to ensure public and environmental safety. Dual
+authorization may also be known as two-person control. Related controls: <a href="../contingency_planning/">CP-9</a>, <a href="../media_protection/">MP-6</a>.</p>
+<p>(3) ACCESS ENFORCEMENT | MANDATORY ACCESS CONTROL</p>
+<p>The information system enforces [Assignment: organization-defined mandatory access control
+policy] over all subjects and objects where the policy:</p>
+<p>(a) Is uniformly enforced across all subjects and objects within the boundary of the information
+system;</p>
+<p>(b) Specifies that a subject that has been granted access to information is constrained from doing
+any of the following;</p>
+<pre><code>(1) Passing the information to unauthorized subjects or objects;
+(2) Granting its privileges to other subjects;
+(3) Changing one or more security attributes on subjects, objects, the information system, or
+information system components;
+(4) Choosing the security attributes and attribute values to be associated with newly created
+or modified objects; or
+(5) Changing the rules governing access control; and
+</code></pre>
+<p>(c) Specifies that [Assignment: organization-defined subjects] may explicitly be granted
+[Assignment: organization-defined privileges (i.e., they are trusted subjects)] such that they
+are not limited by some or all of the above constraints.</p>
+<p>Supplemental Guidance: <a href="../access_control/">Mandatory access control</a> as defined in this control enhancement is
+synonymous with <a href="../access_control/">nondiscretionary access control</a>, and is not constrained only to certain
+historical uses (e.g., implementations using the <a href="https://en.wikipedia.org/wiki/Bell%E2%80%93LaPadula_model">Bell-LaPadula Model</a>). The above class of
+<a href="../access_control/">mandatory access control</a> policies constrains what actions subjects can take with information
+obtained from data objects for which they have already been granted access, thus preventing
+the subjects from passing the information to unauthorized subjects and objects. This class of
+mandatory access control policies also constrains what actions subjects can take with respect
+to the propagation of access control privileges; that is, a subject with a privilege cannot pass
+that privilege to other subjects. The policy is uniformly enforced over all subjects and objects
+to which the information system has control. Otherwise, the access control policy can be
+circumvented. This enforcement typically is provided via an implementation that meets the
+reference monitor concept (see <a href="../access_control/">AC-25</a>). The policy is bounded by the information system
+boundary (i.e., once the information is passed outside of the control of the system, additional
+means may be required to ensure that the constraints on the information remain in effect). The
+trusted subjects described above are granted privileges consistent with the concept of least
+privilege (see <a href="../access_control/">AC-6</a>). Trusted subjects are only given the minimum privileges relative to the
+above policy necessary for satisfying organizational mission/business needs. The control is
+most applicable when there is some policy mandate (e.g., law, Executive Order, directive, or
+regulation) that establishes a policy regarding access to sensitive/classified information and
+some users of the information system are not authorized access to all sensitive/classified
+information resident in the information system. This control can operate in conjunction with
+<a href="./">AC-3 (4)</a>. A subject that is constrained in its operation by policies governed by this control is
+still able to operate under the less rigorous constraints of <a href="./">AC-3 (4)</a>, but policies governed by
+this control take precedence over the less rigorous constraints of <a href="./">AC-3 (4)</a>. For example,
+while a mandatory access control policy imposes a constraint preventing a subject from
+passing information to another subject operating at a different sensitivity label, AC-3 (4)
+permits the subject to pass the information to any subject with the same sensitivity label as the
+subject. Related controls: <a href="../access_control/">AC-25</a>, <a href="systems_and_communications_protection.md">SC-11</a>.</p>
+<p>(4) ACCESS ENFORCEMENT | DISCRETIONARY <a href="../access_control/">ACCESS CONTROL</a>
+The information system enforces [Assignment: organization-defined discretionary access control
+policy] over defined subjects and objects where the policy specifies that a subject that has been
+granted access to information can do one or more of the following:</p>
+<p>(a) Pass the information to any other subjects or objects;</p>
+<p>(b) Grant its privileges to other subjects;</p>
+<p>(c) Change security attributes on subjects, objects, the information system, or the information
+system’s components;</p>
+<p>(d) Choose the security attributes to be associated with newly created or revised objects; or</p>
+<p>(e) Change the rules governing access control.</p>
+<p>Supplemental Guidance: When discretionary <a href="../access_control/">access control</a> policies are implemented, subjects
+are not constrained with regard to what actions they can take with information for which they
+have already been granted access. Thus, subjects that have been granted access to information
+are not prevented from passing (i.e., the subjects have the discretion to pass) the information
+to other subjects or objects. This control enhancement can operate in conjunction with <a href="./">AC-3</a>
+(3). A subject that is constrained in its operation by policies governed by AC-3 (3) is still able
+to operate under the less rigorous constraints of this control enhancement. Thus, while AC-3
+(3) imposes constraints preventing a subject from passing information to another subject
+operating at a different sensitivity level, <a href="./">AC-3 (4)</a> permits the subject to pass the information
+to any subject at the same sensitivity level. The policy is bounded by the information system
+boundary. Once the information is passed outside of the control of the information system,
+additional means may be required to ensure that the constraints remain in effect. While the
+older, more traditional definitions of <a href="./">discretionary access control</a> require identity-based access
+control, that limitation is not required for this use of discretionary access control.</p>
+<p>(5) ACCESS ENFORCEMENT | SECURITY-RELEVANT INFORMATION
+The information system prevents access to [Assignment: organization-defined security-relevant
+information] except during secure, non-operable system states.</p>
+<p>Supplemental Guidance: Security-relevant information is any information within information
+systems that can potentially impact the operation of security functions or the provision of
+security services in a manner that could result in failure to enforce system security policies or
+maintain the isolation of code and data. Security-relevant information includes, for example,
+filtering rules for routers/firewalls, cryptographic key management information, configuration
+parameters for security services, and access control lists. Secure, non-operable system states
+include the times in which information systems are not performing mission/business-related
+processing (e.g., the system is off-line for maintenance, troubleshooting, boot-up, shut down).
+Related control: <a href="../configuration_management/">CM-3</a>.</p>
+<p>(6) ACCESS ENFORCEMENT | PROTECTION OF USER AND SYSTEM INFORMATION
+[Withdrawn: Incorporated into <a href="../media_protection/">MP-4</a> and <a href="systems_and_communications_protection.md">SC-28</a>].</p>
+<p>(7) ACCESS ENFORCEMENT | ROLE-BASED <a href="../access_control/">ACCESS CONTROL</a></p>
+<p>The information system enforces a role-based access control policy over defined subjects and
+objects and controls access based upon [Assignment: organization-defined roles and users
+authorized to assume such roles].</p>
+<p>Supplemental Guidance: Role-based <a href="../access_control/">access control</a> (RBAC) is an access control policy that
+restricts information system access to authorized users. Organizations can create specific roles
+based on job functions and the authorizations (i.e., privileges) to perform needed operations
+on organizational information systems associated with the organization-defined roles. When
+users are assigned to the organizational roles, they inherit the authorizations or privileges
+defined for those roles. RBAC simplifies privilege administration for organizations because
+privileges are not assigned directly to every user (which can be a significant number of</p>
+<p>individuals for mid- to large-size organizations) but are instead acquired through role
+assignments. RBAC can be implemented either as a mandatory or discretionary form of
+access control. For organizations implementing RBAC with mandatory <a href="../access_control/">access controls</a>, the
+requirements in <a href="../access_control/">AC-3</a> (3) define the scope of the subjects and objects covered by the policy.</p>
+<p>(8) ACCESS ENFORCEMENT | REVOCATION OF ACCESS AUTHORIZATIONS</p>
+<p>The information system enforces the revocation of access authorizations resulting from changes
+to the security attributes of subjects and objects based on [Assignment: organization-defined rules
+governing the timing of revocations of access authorizations].</p>
+<p>Supplemental Guidance: Revocation of access rules may differ based on the types of access
+revoked. For example, if a subject (i.e., user or process) is removed from a group, access may
+not be revoked until the next time the object (e.g., file) is opened or until the next time the
+subject attempts a new access to the object. Revocation based on changes to security labels
+may take effect immediately. Organizations can provide alternative approaches on how to
+make revocations immediate if information systems cannot provide such capability and
+immediate revocation is necessary.</p>
+<p>(9) ACCESS ENFORCEMENT | CONTROLLED RELEASE</p>
+<p>The information system does not release information outside of the established system boundary
+unless:</p>
+<p>(a) The receiving [Assignment: organization-defined information system or system component]
+provides [Assignment: organization-defined security safeguards]; and</p>
+<p>(b) [Assignment: organization-defined security safeguards] are used to validate the
+appropriateness of the information designated for release.</p>
+<p>Supplemental Guidance: Information systems can only protect organizational information
+within the confines of established system boundaries. Additional security safeguards may be
+needed to ensure that such information is adequately protected once it is passed beyond the
+established information system boundaries. Examples of information leaving the system
+boundary include transmitting information to an external information system or printing the
+information on one of its printers. In cases where the information system is unable to make a
+determination of the adequacy of the protections provided by entities outside its boundary, as
+a mitigating control, organizations determine procedurally whether the external information
+systems are providing adequate security. The means used to determine the adequacy of the
+security provided by external information systems include, for example, conducting
+inspections or periodic testing, establishing agreements between the organization and its
+counterpart organizations, or some other process. The means used by external entities to
+protect the information received need not be the same as those used by the organization, but
+the means employed are sufficient to provide consistent adjudication of the security policy to
+protect the information. This control enhancement requires information systems to employ
+technical or procedural means to validate the information prior to releasing it to external
+systems. For example, if the information system passes information to another system
+controlled by another organization, technical means are employed to validate that the security
+attributes associated with the exported information are appropriate for the receiving system.
+Alternatively, if the information system passes information to a printer in organizationcontrolled space, procedural means can be employed to ensure that only appropriately
+authorized individuals gain access to the printer. This control enhancement is most applicable
+when there is some policy mandate (e.g., law, Executive Order, directive, or regulation) that
+establishes policy regarding access to the information, and that policy applies beyond the
+realm of a particular information system or organization.</p>
+<p>(10) ACCESS ENFORCEMENT | AUDITED OVERRIDE OF <a href="../access_control/">ACCESS CONTROL</a>MECHANISMS</p>
+<p>The organization employs an audited override of automated access control mechanisms under
+[Assignment: organization-defined conditions].</p>
+<p>Supplemental Guidance: Related controls: <a href="audit_and_accountabilty.md">AU-2, AU-6</a>.</p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../js/base.js" defer></script>
+        <script src="../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

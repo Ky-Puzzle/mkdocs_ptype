@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        <link rel="canonical" href="https://verituslabs.github.io/mkdocs_ptype/ac2-account_management/">
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>Ac2 account management - VeritasLabs</title>
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+
+        <script src="../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="..">VeritasLabs</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href=".." class="nav-link">Home</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../families/" class="nav-link">Families</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h3 id="ac-2-account-management">AC-2: Account Management</h3>
+<p>Control: The organization: <br> </p>
+<p>a. Identifies and selects the following types of information system accounts to support
+organizational missions/business functions: [Assignment: organization-defined information
+system account types];<br></p>
+<p>b. Assigns account managers for information system accounts;<br></p>
+<p>c. Establishes conditions for group and role membership;<br> </p>
+<p>d. Specifies authorized users of the information system, group and role membership, and access
+authorizations (i.e., privileges) and other attributes (as required) for each account;<br></p>
+<p>e. Requires approvals by [Assignment: organization-defined personnel or roles] for requests to
+create information system accounts;<br></p>
+<p>f. Creates, enables, modifies, disables, and removes information system accounts in accordance
+with [Assignment: organization-defined procedures or conditions];<br></p>
+<p>g. Monitors the use of information system accounts;<br></p>
+<p>h. Notifies account managers:<br></p>
+<pre><code>1. When accounts are no longer required;&lt;br&gt;
+2. When users are terminated or transferred; and&lt;br&gt;
+3. When individual information system usage or need-to-know changes;&lt;br&gt;
+</code></pre>
+<p>i. Authorizes access to the information system based on:<br></p>
+<pre><code>1. A valid access authorization;&lt;br&gt;
+2. Intended system usage; and1. Other attributes as required by the organization or associated missions/business functions;&lt;br&gt;
+3. Other attributes as required by the organization or associated missions/business functions;
+</code></pre>
+<p>j. Reviews accounts for compliance with account management requirements [Assignment:
+organization-defined frequency]; and<br></p>
+<p>k. Establishes a process for reissuing shared/group account credentials (if deployed) when
+individuals are removed from the group.<br></p>
+<p>Supplemental Guidance: Information system account types include, for example, individual, shared,
+group, system, guest/anonymous, emergency, developer/manufacturer/vendor, temporary, and
+service. Some of the account management requirements listed above can be implemented by
+organizational information systems. The identification of authorized users of the information
+system and the specification of access privileges reflects the requirements in other security
+controls in the security plan. Users requiring administrative privileges on information system
+accounts receive additional scrutiny by appropriate organizational personnel (e.g., system owner,
+mission/business owner, or chief information security officer) responsible for approving such
+accounts and privileged access. Organizations may choose to define access privileges or other
+attributes by account, by type of account, or a combination of both. Other attributes required for
+<a href="../access_control/">authorizing access</a> include, for example, restrictions on time-of-day, day-of-week, and point-oforigin. In defining other account attributes, organizations consider system-related requirements
+(e.g., scheduled maintenance, system upgrades) and mission/business requirements, (e.g., time
+zone differences, customer requirements, remote access to support travel requirements). Failure to
+consider these factors could affect information system availability. Temporary and emergency
+accounts are accounts intended for short-term use. Organizations establish temporary accounts as a
+part of normal account activation procedures when there is a need for short-term accounts without
+the demand for immediacy in account activation. Organizations establish emergency accounts in
+response to crisis situations and with the need for rapid account activation. Therefore, emergency
+account activation may bypass normal account authorization processes. Emergency and temporary
+accounts are not to be confused with infrequently used accounts (e.g., local logon accounts used
+for special tasks defined by organizations or when network resources are unavailable). Such
+accounts remain available and are not subject to automatic disabling or removal dates. Conditions
+for disabling or deactivating accounts include, for example: (i) when shared/group, emergency, or
+temporary accounts are no longer required; or (ii) when individuals are transferred or terminated.
+Some types of information system accounts may require specialized training. Related controls:
+<a href="ac3-information_flow_enforcement.md">AC-3</a> <a href="../access_control/">AC-4</a>, AC-5, AC-6, AC-10, AC-17, AC-19, AC-20, <a href="../audit_and_accountability/">AU-9</a>, <a href="../identification_and_authentication/">IA-2</a>, IA-4, IA-5, IA-8, <a href="../configuration_management/">CM-5</a>,
+CM-6, CM-11, <a href="../maintenance/">MA-3</a>, MA-4, MA-5, <a href="../planning/">PL-4</a>, <a href="systems_and_communications_protection.md">SC-13</a>.<br></p>
+<p>Control Enhancements:<br></p>
+<p>(1) ACCOUNT MANAGEMENT | AUTOMATED SYSTEM ACCOUNT MANAGEMENT<br>
+The organization employs automated mechanisms to support the management of information
+system accounts.</p>
+<p>Supplemental Guidance: The use of automated mechanisms can include, for example: using
+email or text messaging to automatically notify account managers when users are terminated
+or transferred; using the information system to monitor account usage; and using telephonic
+notification to report atypical system account usage.</p>
+<p>(2) ACCOUNT MANAGEMENT | REMOVAL OF TEMPORARY / EMERGENCY ACCOUNTS
+The information system automatically [Selection: removes; disables] temporary and emergency
+accounts after [Assignment: organization-defined time period for each type of account].
+Supplemental Guidance: This control enhancement requires the removal of both temporary and
+emergency accounts automatically after a predefined period of time has elapsed, rather than at
+the convenience of the systems administrator.</p>
+<p>(3) ACCOUNT MANAGEMENT | DISABLE INACTIVE ACCOUNTS
+The information system automatically disables inactive accounts after [Assignment: organizationdefined time period].</p>
+<p>(4) ACCOUNT MANAGEMENT | AUTOMATED <a href="../audit_and_accountability/">AUDIT</a> ACTIONS
+The information system automatically audits account creation, modification, enabling, disabling,
+and removal actions, and notifies [Assignment: organization-defined personnel or roles].
+Supplemental Guidance: Related controls: <a href="../audit_and_accountability/">AU-2</a>, <a href="../audit_and_accountability/">AU-12</a>.</p>
+<p>(5) ACCOUNT MANAGEMENT | INACTIVITY LOGOUT
+The organization requires that users log out when [Assignment: organization-defined time-period
+of expected inactivity or description of when to log out].
+Supplemental Guidance: Related control: <a href="systems_and_communications_protection.md">SC-23</a>.</p>
+<p>(6) ACCOUNT MANAGEMENT | DYNAMIC PRIVILEGE MANAGEMENT</p>
+<p>The information system implements the following dynamic privilege management capabilities:
+[Assignment: organization-defined list of dynamic privilege management capabilities].</p>
+<p>Supplemental Guidance: In contrast to conventional access control approaches which employ
+static information system accounts and predefined sets of user privileges, dynamic access
+control approaches (e.g., service-oriented architectures) rely on run time access control
+decisions facilitated by dynamic privilege management. While user identities may remain
+relatively constant over time, user privileges may change more frequently based on ongoing
+mission/business requirements and operational needs of organizations. Dynamic privilege
+management can include, for example, the immediate revocation of privileges from users, as
+opposed to requiring that users terminate and restart their sessions to reflect any changes in
+privileges. Dynamic privilege management can also refer to mechanisms that change the
+privileges of users based on dynamic rules as opposed to editing specific user profiles. This
+type of privilege management includes, for example, automatic adjustments of privileges if
+users are operating out of their normal work times, or if information systems are under duress
+or in emergency maintenance situations. This control enhancement also includes the ancillary
+effects of privilege changes, for example, the potential changes to encryption keys used for
+communications. Dynamic privilege management can support requirements for information
+system resiliency. Related control: <a href="../access_control/">AC-16</a>.</p>
+<p>(7) ACCOUNT MANAGEMENT | ROLE-BASED SCHEMES</p>
+<pre><code>The organization:
+(a) Establishes and administers privileged user accounts in accordance with a role-based access
+scheme that organizes allowed information system access and privileges into roles;
+(b) Monitors privileged role assignments; and
+(c) Takes [Assignment: organization-defined actions] when privileged role assignments are no
+longer appropriate.
+</code></pre>
+<p>Supplemental Guidance: Privileged roles are organization-defined roles assigned to individuals
+that allow those individuals to perform certain security-relevant functions that ordinary users
+are not authorized to perform. These privileged roles include, for example, <a href="systems_and_communications_protection.md">key management,
+account management, network and system administration, database administration, and web
+administration</a>.</p>
+<p>(8) ACCOUNT MANAGEMENT | DYNAMIC ACCOUNT CREATION
+The information system creates [Assignment: organization-defined information system accounts]
+dynamically.</p>
+<p>Supplemental Guidance: Dynamic approaches for creating information system accounts (e.g., as
+implemented within service-oriented architectures) rely on establishing accounts (identities) at
+run time for entities that were previously unknown. Organizations plan for dynamic creation
+of information system accounts by establishing trust relationships and mechanisms with the
+appropriate authorities to validate related authorizations and privileges. Related control: <a href="../access_control/">AC16</a>.</p>
+<p>(9) ACCOUNT MANAGEMENT | RESTRICTIONS ON USE OF SHARED / GROUP ACCOUNTS
+The organization only permits the use of shared/group accounts that meet [Assignment:
+organization-defined conditions for establishing shared/group accounts].</p>
+<p>(10) ACCOUNT MANAGEMENT | SHARED / GROUP ACCOUNT CREDENTIAL TERMINATION
+The information system terminates shared/group account credentials when members leave the
+group.</p>
+<p>(11) ACCOUNT MANAGEMENT | USAGE CONDITIONS
+The information system enforces [Assignment: organization-defined circumstances and/or usage
+conditions] for [Assignment: organization-defined information system accounts].
+Supplemental Guidance: Organizations can describe the specific conditions or circumstances
+under which information system accounts can be used, for example, by restricting usage to
+certain days of the week, time of day, or specific durations of time.</p>
+<p>(12) ACCOUNT MANAGEMENT | ACCOUNT MONITORING / ATYPICAL USAGE
+The organization:</p>
+<pre><code>(a) Monitors information system accounts for [Assignment: organization-defined atypical usage];
+and
+(b) Reports atypical usage of information system accounts to [Assignment: organization-defined
+personnel or roles].
+</code></pre>
+<p>Supplemental Guidance: Atypical usage includes, for example, accessing information systems
+at certain times of the day and from locations that are not consistent with the normal usage
+patterns of individuals working in organizations. Related control: <a href="system_assessment_and_authorization.md">CA-7</a>.</p>
+<p>(13) ACCOUNT MANAGEMENT | DISABLE ACCOUNTS FOR HIGH-RISK INDIVIDUALS
+The organization disables accounts of users posing a significant risk within [Assignment:
+organization-defined time period] of discovery of the risk.</p>
+<p>Supplemental Guidance: Users posing a significant <a href="../risk_assessment/">risk</a> to organizations include individuals for
+whom reliable evidence or intelligence indicates either the intention to use authorized access
+to information systems to cause harm or through whom adversaries will cause harm. Harm
+includes potential adverse impacts to organizational operations and assets, individuals, other
+organizations, or the Nation. Close coordination between authorizing officials, information
+system administrators, and human resource managers is essential in order for timely execution
+of this control enhancement. Related control: <a href="../personnel_security/">PS-4</a>.</p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../js/base.js" defer></script>
+        <script src="../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
